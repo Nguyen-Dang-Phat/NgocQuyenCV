@@ -150,5 +150,302 @@
         </div>
     </footer>
 </body>
+<style>
+    :root {
+    --primary-color: #ff5ee4;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --text-header: #562e7b;
+    --border-color: #d4d4d4;
+}
 
+* {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* Hack */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.grid {
+    max-width: 100%;
+    margin: 0 200px;
+}
+
+/* header */
+.header {
+    background-image: url(/img/header.png);
+    background-size: cover;
+    height: 500px;
+}
+
+.header__information {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.header__address,
+.header__contact {
+    height: 80px;
+    width: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: linear-gradient(180deg, #fb42dc, #f1b5f1);
+    border-radius: 30px;
+}
+
+.header__address-icon,
+.header__contact-icon {
+    margin: 0 20px ;
+    font-size: 2.5rem;
+    color: var(--white-color);
+}
+
+.header__address-item span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: 2.5rem;
+}
+
+.header__row {
+    margin-top: 150px;
+    height: 500px;
+}
+
+.header__row-avatar img {
+    width: 280px;
+    border-radius: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px var(--border-color);
+}
+
+.header__row-info {
+    width: 70%;
+    height: 500px;
+    background-image: linear-gradient(180deg, #f1b5f1 ,#fff, #fff);
+    margin: 0 auto;
+    border-radius: 30px;
+    position: relative;
+}
+
+
+.header__row-avatar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -115px;
+    left: 0;
+    right: 0;
+}
+
+.header__row-name {
+    color: transparent;
+    background-image: linear-gradient(to left top, #fcb5c6, var(--primary-color), #ff856c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    font-family: emoji;
+}
+
+.header__row-specialized {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: initial;
+}
+
+.header__row-phone, .header__row-email {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.header__row-email a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.header__row-link {
+    margin-top: 30px;
+}
+
+.header__row-link a {
+    text-decoration: none;
+    font-size: 6rem;
+    color: var(--primary-color);
+}
+
+/* Skill */
+.skill {
+    margin-top: 300px;
+}
+
+.row {
+    width: 250px;
+    margin-right: 1px;
+}
+
+.container {
+    display: flex;
+    padding-left: 100px;
+    padding: 30px 0;
+}
+
+.detail {
+    width: 555px;
+    margin-left: 115px;
+}
+
+.crossbar {
+    height: 6px;
+    width: 100px;
+    background-image: linear-gradient(to left top, #fcb5c6, var(--primary-color), #ff856c);
+    border-radius: 10px;
+    
+}
+
+.name__list {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5rem;
+    color: transparent;
+    background-image: linear-gradient(to left top, #fcb5c6, var(--primary-color), #ff856c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: emoji;
+}
+
+.skill__detail ul {
+    list-style: none;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+/* <!-- experience --> */
+
+.experience {
+    background-color: #fbcefb;
+}
+
+.experience__detail li {
+    list-style: none;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 3px 0;
+}
+
+.experience__detail div {
+    list-style: none;
+    padding: 0 0 0 10px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* <!-- certificate --> */
+.certificate {
+    height: 160px;
+}
+
+.certificate__detail {
+    list-style: none;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.certificate__detail ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* <!-- Education --> */
+
+.Education {
+    background-color: #fbcefb;
+}
+
+.Education__detail {
+    list-style: none;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.Education__detail div {
+    list-style: none;
+    padding: 0 0 0 10px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* footer */
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.footer__dash {
+    height: 5px;
+    width: 1200px;
+    background-image: linear-gradient(to left top, #fcb5c6, var(--primary-color), #ff856c);
+    border-radius: 10px;
+}
+
+.footer__name {
+    color: transparent;
+    background-image: linear-gradient(to left top, #fcb5c6, var(--primary-color), #ff856c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    font-family: emoji;
+}
+
+.footer__experience {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: initial;
+}
+
+.footer__gmail, .footer__phone {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.footer__gmail {
+    color: var(--primary-color);
+}
+
+.footer__row-link a {
+    color: var(--primary-color);
+    font-size: 5rem;
+    text-decoration: none;
+}
+ </style>
 </html>

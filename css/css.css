@@ -294,3 +294,136 @@ html {
     font-size: 5rem;
     text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .grid {
+        margin: 0;
+    }
+
+    .header__information {
+        display: block;
+        margin: 0 10px;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .header__contact,
+    .header__address {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .header__address {
+        margin-bottom: 10px;
+    }
+
+    .header__address-item {
+        width: 65%;
+        font-size: 86%;
+    }
+
+    .header__address-item span {
+        display: block;
+        word-wrap: break-word;
+        width: 100%;
+        font-size: 168%;
+    }
+
+    .header__row-avatar {
+        top: -13%;
+    }
+
+    .header__row {
+        margin-top: 30%;
+        height: 100%;
+    }
+
+    .header__row-info {
+        height: 300px;
+        width: 80%;
+    }
+
+    .header__row-avatar img {
+        width: 50%;
+        margin-bottom: 3%;
+    }
+
+    .header__row-name {
+        font-size: 230%;
+        margin-bottom: 2%;
+    }
+
+    .header__row-specialized {
+        font-size: 140%;
+    }
+
+    .header__row-email {
+        text-align: center;
+    }
+
+    .header__row-email,
+    .header__row-phone {
+        font-size: 120%;
+    }
+
+    .header__row-link a{
+        font-size: 370%;
+
+    }
+
+    .container {
+        display: block;
+    }
+
+    .skill {
+        margin-top: 45%;
+    }
+
+    .crossbar {
+        height: 4px;
+        width: 30%;
+    }
+
+    .name__list {
+        font-size: 270%;
+    }
+
+    .detail {
+        margin: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 100%;
+    }
+
+    .skill__detail ul{
+        font-size: 185%;
+        list-style: circle;
+    }
+    
+    .footer {
+        margin: 5% 0;
+    }
+
+    .footer__dash {
+        width: 70%;
+    }
+
+    .footer__name {
+        font-size: 250%;
+        margin: 0;
+    }
+
+    .footer__experience {
+        font-size: 200%;
+    }
+
+    .footer__gmail, .footer__phone {
+        font-size: 150%;
+    }
+
+    .footer__row-link a {
+        font-size: 370%;
+    }

@@ -302,6 +302,9 @@ html {
     .grid {
         margin: 0;
     }
+    .row {
+        margin-left: 2%;
+    }
 
     .header__information {
         display: block;

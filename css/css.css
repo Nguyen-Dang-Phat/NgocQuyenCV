@@ -1,9 +1,10 @@
-:root 
+:root {
     --primary-color: #ff5ee4;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --text-header: #562e7b;
+    --border-color: #d4d4d4;
 }
 
 * {
@@ -27,7 +28,6 @@ html {
 
 /* header */
 .header {
-    background-image: url(img/header.png);
     background-size: cover;
     height: 500px;
 }
@@ -51,7 +51,7 @@ html {
 
 .header__address-icon,
 .header__contact-icon {
-    margin: 0 20px ;
+    margin: 0 20px;
     font-size: 2.5rem;
     color: var(--white-color);
 }
@@ -79,7 +79,7 @@ html {
 .header__row-info {
     width: 70%;
     height: 500px;
-    background-image: linear-gradient(180deg, #f1b5f1 ,#fff, #fff);
+    background-image: linear-gradient(180deg, #f1b5f1, #fff, #fff);
     margin: 0 auto;
     border-radius: 30px;
     position: relative;
@@ -116,7 +116,8 @@ html {
     font-family: initial;
 }
 
-.header__row-phone, .header__row-email {
+.header__row-phone,
+.header__row-email {
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 15px;
@@ -163,7 +164,7 @@ html {
     width: 100px;
     background-image: linear-gradient(to left top, #fcb5c6, var(--primary-color), #ff856c);
     border-radius: 10px;
-    
+
 }
 
 .name__list {
@@ -208,7 +209,6 @@ html {
 
 /* <!-- certificate --> */
 .certificate {
-/*     background-color: #fff; */
     height: 160px;
 }
 
@@ -280,7 +280,8 @@ html {
     font-family: initial;
 }
 
-.footer__gmail, .footer__phone {
+.footer__gmail,
+.footer__phone {
     font-size: 2rem;
     text-decoration: none;
 }
@@ -294,6 +295,7 @@ html {
     font-size: 5rem;
     text-decoration: none;
 }
+
 @media screen and (max-width: 768px) {
     .header {
         width: 100%;
@@ -301,9 +303,6 @@ html {
 
     .grid {
         margin: 0;
-    }
-    .row {
-        margin-left: 2%;
     }
 
     .header__information {
@@ -372,9 +371,13 @@ html {
         font-size: 120%;
     }
 
-    .header__row-link a{
+    .header__row-link a {
         font-size: 370%;
 
+    }
+
+    .row {
+        margin-left: 2%;
     }
 
     .container {
@@ -401,11 +404,11 @@ html {
         width: 100%;
     }
 
-    .skill__detail ul{
+    .skill__detail ul {
         font-size: 185%;
         list-style: circle;
     }
-    
+
     .footer {
         margin: 5% 0;
     }
@@ -423,10 +426,12 @@ html {
         font-size: 200%;
     }
 
-    .footer__gmail, .footer__phone {
+    .footer__gmail,
+    .footer__phone {
         font-size: 150%;
     }
 
     .footer__row-link a {
         font-size: 370%;
     }
+}

@@ -1,10 +1,9 @@
-:root {
+:root 
     --primary-color: #ff5ee4;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --text-header: #562e7b;
-    --border-color: #d4d4d4;
 }
 
 * {
@@ -209,6 +208,7 @@ html {
 
 /* <!-- certificate --> */
 .certificate {
+    background-color: #fff;
     height: 160px;
 }
 
